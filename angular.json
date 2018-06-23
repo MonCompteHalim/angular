@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "../Pronostics/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
