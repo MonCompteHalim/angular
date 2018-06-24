@@ -1,6 +1,9 @@
 export class AuthService {
+  
+static authServ;
 
-authServ =false;
+authServ = false;
+
 
 signIn(){
     this.authServ=true;

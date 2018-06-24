@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-auth-view',
@@ -9,8 +10,12 @@ import { AuthService } from '../services/auth.service';
 export class AuthViewComponent implements OnInit {
 
   constructor(private authentification: AuthService) { }
+  
+  @Input() mail: string;
 
   authen: boolean;
+  authtest=this.authentification.authServ;
+  
   ngOnInit() {
     this.authen=this.authentification.authServ;
   }
